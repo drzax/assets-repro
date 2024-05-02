@@ -1,10 +1,13 @@
 <script>
+	import { assets } from '$app/paths';
 	import Header from './Header.svelte';
 	import './styles.css';
 </script>
 
 <div class="app">
 	<Header />
+
+	<img width="50" src="{assets}/favicon.png" alt="The Svelte logo." />
 
 	<main>
 		<slot />
